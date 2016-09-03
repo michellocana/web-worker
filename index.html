@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multi-threading JS</title>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		var asc = new Counter({
+			order: 		"ASC",
+		});
+
+		var desc = new Counter({
+			order: 		"DESC"
+		});
+
+		asc.init();
+		desc.init();
+
+		// var buttonAsc = document.createElement('button');
+		// buttonAsc.appendChild(document.createTextNode("Start ascending count"));
+		// buttonAsc.onclick = function(){
+		// 	asc.init();
+		// };
+
+		// document.body.appendChild(buttonAsc);
+
+		// asc.init();
+
+		// Debugging
+		// (function(){
+		// 	var buttonAsc = document.createElement('button');
+		// 	buttonAsc.appendChild(document.createTextNode("Start ascending count"));
+		// 	buttonAsc.onclick = function(){
+		// 		asc.init();
+		// 	};
+
+		// 	var buttonDesc = document.createElement('button');
+		// 	buttonDesc.appendChild(document.createTextNode("Start descending count"));
+		// 	buttonDesc.onclick = function(){
+		// 		desc.init();
+		// 	};
+
+		// 	document.body.appendChild(buttonAsc);
+		// 	document.body.appendChild(buttonDesc);
+		// })();
+	</script>
+</body>
+</html>
